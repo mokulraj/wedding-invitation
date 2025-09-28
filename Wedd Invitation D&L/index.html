@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducyy & Lolita Wedding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<center>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" a href="#hero">D & L</div>
+            <ul class="nav-links">
+                <li><a href="#wedding-details">Wedding Details</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+                 <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="#countdown-section">Countdown</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+            </ul>
+        </div>  
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>DUCYY & LOLITA</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-date">AUGUST 31, 2035</p>
+            <p>San Francisco, California</p>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down fa-2x"></i>
+        </div>
+    </section>
+
+    <!-- Wedding Details Section -->
+   <section id="wedding-details">
+        <div class="wedding-container">
+            <!-- Left Sidebar - Unchanged -->
+            <div class="left-sidebar">
+                <div class="wedding-title">
+                    <h1>WEDDING<br>INVITATION</h1>
+                    <div class="wedding-date">August 31st 2035</div>
+                </div>
+            </div>
+            
+            <!-- Right Content - Accordion -->
+            <div class="right-content">
+                <!-- Location Accordion -->
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="header-content">
+                            <div class="section-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h2 class="section-title">Location</h2>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="info-item">
+                            <strong>Venue:</strong> The Old Chapel
+                        </div>
+                        <div class="info-item">
+                            <strong>Address:</strong> 500 Terry Francine St.<br>
+                            <span style="margin-left: 120px;">San Francisco CA 94158</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Parking:</strong> Available on-site
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ceremony Accordion -->
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="header-content">
+                            <div class="section-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h2 class="section-title">Ceremony</h2>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="time">2:30 pm</div>
+                                <div class="event">Guest Arrival</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">4:30 pm</div>
+                                <div class="event">Wedding Ceremony</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            The ceremony will begin promptly at 4:30 pm at the garden of the Old Chapel. Please arrive on time to secure your seats.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reception Accordion -->
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="header-content">
+                            <div class="section-icon">
+                                <i class="fas fa-glass-cheers"></i>
+                            </div>
+                            <h2 class="section-title">Reception</h2>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="time">5:00 pm</div>
+                                <div class="event">Grand Ballroom</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            Join us for an evening of celebration, dining, and dancing in our beautifully decorated Grand Ballroom. Enjoy a gourmet dinner and heartfelt toasts as we begin our journey together.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Party Accordion -->
+                <div class="accordion">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="header-content">
+                            <div class="section-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h2 class="section-title">Party</h2>
+                        </div>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="time">8:00 pm</div>
+                                <div class="event">Old Chapel Garden</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            The celebration continues under the stars in our enchanted garden. Dance the night away to live music, enjoy late-night snacks, and create memories that will last a lifetime.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Story Section -->
+    <section id="our-story">
+        <div class="section-content">
+            <h2>Our Story</h2>
+            <p>From friends to forever — Our story begins.</p><br>
+        </div>
+        
+        <div class="story-content">
+            <!-- Story Item 1: Image Left, Text Right -->
+            <div class="story-item">
+                <div class="story-image-container">
+                    <div class="story-image" style="background-image: url('images/story-img01.jpg')"></div>
+                </div>
+                <div class="story-text-container">
+                    <div class="story-text">
+                        <p class="story-date">JUNE 2018</p>
+                        <h3>The Day We Met</h3>
+                        <p>We met at a friend's barbecue and immediately connected over our shared love for hiking and indie music. What started as a casual conversation turned into a five-hour discussion about life, dreams, and everything in between.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Story Item 2: Text Left, Image Right -->
+            <div class="story-item reverse">
+                <div class="story-image-container">
+                    <div class="story-image" style="background-image: url('images/story-img02.jpg')"></div>
+                </div>
+                <div class="story-text-container">
+                    <div class="story-text">
+                        <p class="story-date">SEPTEMBER 2018</p>
+                        <h3>First Adventure</h3>
+                        <p>Ducyy and Lolita’s first adventure wasn’t about grand destinations, but quiet streets under silver streetlights. Hand in hand, they wandered the hushed city, their laughter echoing softly, discovering that true adventure lies not in places, but in the person beside you.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Story Item 3: Image Left, Text Right -->
+            <div class="story-item">
+                <div class="story-image-container">
+                    <div class="story-image" style="background-image: url('images/story-img03.jpg')"></div>
+                </div>
+                <div class="story-text-container">
+                    <div class="story-text">
+                        <p class="story-date">DECEMBER 2022</p>
+                        <h3>The Proposal</h3>
+                        <p>With a sparkling question, Ducy asked Lolita to begin their forever. They said 'yes' to love, to a future filled with joy, and to a lifelong journey together. Now, we joyfully invite you to witness the beginning of our married life as we exchange vows and celebrate our love.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- gallery section -->
+    <section id="gallery-section">
+     <div class="unified-container">
+        <h1 class="gallery-title">gallery</h1>
+        <p class="gallery-subtitle">Elegance in simplicity</p>
+        
+        <div class="content-wrapper">
+            <div class="gallery">
+                <div class="gallery-item small">
+                    <img src="images/gallery-img1.jpg" alt="Gallery Image 1">
+                </div>
+                
+                <div class="gallery-item medium">
+                    <img src="images/gallery-img2.jpg" alt="Gallery Image 2">
+                </div>
+                
+                <div class="gallery-item large">
+                    <img src="images/gallery-img3.jpg" alt="Gallery Image 3">
+                </div>
+                
+                <div class="gallery-item medium">
+                    <img src="images/gallery-img4.jpg" alt="Gallery Image 4">
+                </div>
+                
+                <div class="gallery-item small">
+                    <img src="images/gallery-img5.jpg" alt="Gallery Image 5">
+                </div>
+            </div>
+            
+            <!-- Text section merged with gallery -->
+            <div class="text-section">
+                <div class="corner-decoration corner-tl"></div>
+                <div class="corner-decoration corner-tr"></div>
+                <div class="corner-decoration corner-bl"></div>
+                <div class="corner-decoration corner-br"></div>
+                
+                <div class="text-content">
+                    <h2 class="text-heading">The Art of Seeing</h2>
+                    
+                    <p class="text-paragraph">
+                       Every picture tells a piece of our story — the laughter we’ve shared, the milestones we’ve celebrated, and the memories we’ll cherish forever. Browse through our gallery to relive these special moments and glimpse the love that brought us here today.
+                    </p>
+                    
+                    <div class="text-quote">Simplicity is the ultimate sophistication</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown-section">
+        <div class="countdown-container">
+            <h2 class="countdown-title">The Countdown Begins</h2>
+            <p class="countdown-subtitle">Every moment brings us closer to our special day</p>
+            
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            
+            <p class="countdown-message">"The best thing to hold onto in life is each other." - Audrey Hepburn</p>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp">
+        <div class="section-content">
+            <h2>RSVP</h2>
+            <p>We can't wait to celebrate with you! Please RSVP by July 1, 2035.</p>
+            
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="attending">Will you be attending?</label>
+                    <select id="attending" name="attending" required>
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes, I'll be there!</option>
+                        <option value="no">Sorry, I can't make it</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Leave a message for the couple (optional)</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Send RSVP</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+<footer>
+  <div class="footer-container">
+    <!-- Left Logo -->
+    <div class="footer-left">D & L</div>
+
+    <!-- Right Columns -->
+    <div class="footer-right">
+      <!-- Location Column -->
+      <div class="footer-location">
+        <h3>The Old Chapel</h3>
+        <p>500 Terry Francine St.</p>
+        <p>San Francisco, CA 94158</p>
+        <a href="#" class="direction-link">
+          Directions <span class="arrow">➔</span>
+        </a>
+      </div>
+
+      <!-- Navigation Column -->
+      <div class="footer-nav">
+        <a href="#wedding-details">Wedding Details</a>
+        <a href="#our-story">Our Story</a>
+        <a href="#gallery-section">Gallery</a>
+        <a href="#countdown-section">Countdown</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</center>
+</html>
